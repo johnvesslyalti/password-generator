@@ -10,8 +10,12 @@ function generatePassword() {
     document.getElementById("password").value = password;
 }
 function copyPassword() {
-    const passwordField = document.getElementById("password");
+    const passwordField = document.getElementById("password").value;
+    if (passwordField === '') {
+        alert("Please Press Generate Button")
+    } else {
     passwordField.select();
     document.execCommand("copy");
     alert("password copie successfully");
+}
 }

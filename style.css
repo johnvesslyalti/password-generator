@@ -9,10 +9,18 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #f0f0f0;
+    background: linear-gradient(
+        135deg,
+        rgb(146, 66, 123),
+        rgb(69, 90, 150)
+    );
 }
 .container {
-    background: #fff;
+    background: linear-gradient(
+        135deg,
+        rgb(69, 150, 107),
+        rgb(66, 146, 127)
+    );;
     padding: 20px;
     border-radius: 10px;
 }
@@ -34,7 +42,7 @@ input:focus {
     padding: 8px;
     border: none;
     cursor: pointer;
-    background-color: rgba(0, 0, 255, 0.558);
+    background-color: rgba(0, 255, 132, 0.558);
     color: white;
     border-radius: 0 8px 8px 0;
 }
@@ -43,9 +51,10 @@ input:focus {
     padding: 10px 5px;
     width: 100%;
     cursor: pointer;
-    background-color: rgba(0, 0, 255, 0.558);
+    background-color: rgba(0, 255, 21, 0.558);
     border: none;
     border-radius: 8px;
+    color: white;
 }
 .gnt:hover {
     transform: scale(1.01);
